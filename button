@@ -1,0 +1,16 @@
+Next you add the Button Core Component and give it an onPress prop:
+
+<Button
+  onPress={() => {
+    setIsHungry(false);
+  }}
+  //..
+/>
+
+Now, when someone presses the button, onPress will fire, calling the setIsHungry(false). This sets the state variable isHungry to false. When isHungry is false, the Button’s disabled prop is set to true and its title also changes:
+
+<Button
+  //..
+  disabled={!isHungry}
+  title={isHungry ? 'Pour me some milk, please!' : 'Thank you!'}
+/>
