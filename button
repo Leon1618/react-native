@@ -2,7 +2,7 @@ Next you add the Button Core Component and give it an onPress prop:
 
 <Button
   onPress={() => {
-    setIsHungry(false);
+    setIsHungry(true);
   }}
   //..
 />
